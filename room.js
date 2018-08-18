@@ -8,7 +8,11 @@ class Room {
 		this.occupant = customer;
 	}
 	checkIfOccupied() {
-
+		if(this.hotel.rooms.length === 0) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 	removeOccupant() {
 
