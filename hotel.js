@@ -26,8 +26,8 @@ class Hotel{
 		if(this.room.checkIfOccupied() === false) {
 			this.rooms[0].addOccupant(newCustomer);
 	}
-	getKitchenService() {
-
+	getKitchenService(room, food) {
+		this.staff.handleKitchenRequest(room, food);
 	}
 
 }
