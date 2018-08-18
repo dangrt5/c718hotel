@@ -8,7 +8,7 @@ class Room {
 		this.occupant = customer;
 	}
 	checkIfOccupied() {
-		if(this.hotel.rooms.length === 0) {
+		if(!this.hotel.rooms.length) {
 			return false;
 		} else {
 			return true;
@@ -18,6 +18,4 @@ class Room {
 
 	}
 	getRoomService(food) {
-		this.hotel.getKitchenService();
-	}
 }
