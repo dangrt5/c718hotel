@@ -1,8 +1,3 @@
-class Hotel {
-	constructor() {
-
-// add room
-
 class Hotel{
 	constructor() {
 		this.name = 'marriot';
@@ -27,7 +22,8 @@ class Hotel{
 
 	}
 	getVacantRooms() {
-
+		if(this.room.checkIfOccupied() === false) {
+			
 	}
 	getKitchenService() {
 
