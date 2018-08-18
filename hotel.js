@@ -23,7 +23,8 @@ class Hotel{
 		this.staff.push(newStaff);
 	}
 	getVacantRooms() {
-
+		if(this.room.checkIfOccupied() === false) {
+			
 	}
 	getKitchenService() {
 
