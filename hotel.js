@@ -7,7 +7,7 @@ class Hotel{
 	//make a customer object with the given name and add to a room.  need to add to a room with no occupants
 	checkInCustomer( name ) {
 		var newCustomer = new Customer(name);
-		this.rooms[0].addOccupant(newCustomer);
+		this.getVacantRooms();
 	}
 	checkOutCustomer() {
 
@@ -24,7 +24,7 @@ class Hotel{
 	}
 	getVacantRooms() {
 		if(this.room.checkIfOccupied() === false) {
-			
+			this.rooms[0].addOccupant(newCustomer);
 	}
 	getKitchenService() {
 
