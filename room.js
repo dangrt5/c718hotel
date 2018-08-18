@@ -8,12 +8,14 @@ class Room {
 		this.occupant = customer;
 	}
 	checkIfOccupied() {
-
+		if(!this.hotel.rooms.length) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 	removeOccupant() {
 
 	}
 	getRoomService(food) {
-		this.hotel.getKitchenService();
-	}
 }
